@@ -393,7 +393,6 @@ void OPFZoneTempFD::updatePhaseField()
 	double Mc = M;						//assume constant mobility
 	double Temp = Tmax;					//assume constant temperature
 	double chiN  = (beta + alpha/Temp)*N;
-	std::cout << chiN <<" "<< beta <<" "<< alpha  <<" "<< Temp <<" "<< N << std::endl;
 	double x = chiN - chiNs;
 	double g = abs(0.5 - co);
 	double g2 = pow(g,2);
@@ -539,7 +538,6 @@ void OPFZoneTempFD::updatePhaseField()
 	
 	RHS.updateBoundaries(bX,bY,bZ);
 	c += p.dt*RHS;
-	std::cout << c_2 << " " << c_3 << " " << c_4 << " " << c_5 << " " << c_6 <<  std::endl;
 }//updatePhaseField
 
 // -------------------------------------------------------------------------
