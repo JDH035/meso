@@ -22,7 +22,6 @@ private:
     double noiseStr;
 	double wzone;
 	double vzone;
-	double S;
 	double Tmax;
 	double Tmin;
 	double N;
@@ -32,12 +31,15 @@ private:
 	int tempSpace1;
 	int tempSpace2;
 	double tempSpace3;
+	double tempSpace4;
+	int tempSpace5;
 	SfieldFD tempL;
 	bool bX;
 	bool bY;
 	bool bZ;
 	bool topWetting;
 	bool bcp;
+	double chiNs;
 public:
 
     OPFZoneTempFD(const CommonParams&, const GetPot&);
